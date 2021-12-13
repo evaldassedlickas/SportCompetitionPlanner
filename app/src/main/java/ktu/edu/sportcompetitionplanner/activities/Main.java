@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import ktu.edu.sportcompetitionplanner.R;
 
-public class MainActivity extends BaseActivity {
+public class Main extends Base {
     private Button playersBtn, teamsBtn;
     private Context context = this;
 
@@ -36,7 +36,7 @@ public class MainActivity extends BaseActivity {
     View.OnClickListener btnTeamsClick = new View.OnClickListener(){
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(context, TeamsListActivity.class);
+            Intent intent = new Intent(context, TeamsList.class);
             context.startActivity(intent);
         }
     };

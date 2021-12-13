@@ -1,13 +1,9 @@
 package ktu.edu.sportcompetitionplanner.activities;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 import ktu.edu.sportcompetitionplanner.R;
 import ktu.edu.sportcompetitionplanner.models.User;
 
-public class ProfilePreviewActivity extends BaseActivity {
+public class ProfilePreview extends Base {
     private FirebaseAuth mauth;
     private FirebaseDatabase database;
     private TextView tvEmail, tvUserUid;
@@ -34,7 +30,7 @@ public class ProfilePreviewActivity extends BaseActivity {
         super.onStart();
         FirebaseUser user = mauth.getCurrentUser();
         if(user == null){
-            startActivity(new Intent(ProfilePreviewActivity.this, LoginActivity.class));
+            startActivity(new Intent(ProfilePreview.this, LoginActivity.class));
         }
     }
 
@@ -61,7 +57,7 @@ public class ProfilePreviewActivity extends BaseActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Toast.makeText(ProfilePreviewActivity.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ProfilePreview.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
             }
         });
         ActionBar actionBar = getSupportActionBar();

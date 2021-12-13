@@ -1,5 +1,4 @@
 package ktu.edu.sportcompetitionplanner.activities;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +12,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import ktu.edu.sportcompetitionplanner.R;
-import ktu.edu.sportcompetitionplanner.models.Player;
 import ktu.edu.sportcompetitionplanner.models.Team;
 
 
-public class CreateTeamActivity extends BaseActivity {
+public class CreateTeam extends Base {
     DatabaseReference db;
 
     EditText nameEt, countryEt, descriptionEt;
@@ -71,8 +69,8 @@ public class CreateTeamActivity extends BaseActivity {
         db.child(teamID)
                 .setValue(team);
 
-        startActivity(new Intent(CreateTeamActivity.this, TeamsListActivity.class));
-        Toast.makeText(CreateTeamActivity.this, "Team created sucussfully", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(CreateTeam.this, TeamsList.class));
+        Toast.makeText(CreateTeam.this, "Team created sucussfully", Toast.LENGTH_LONG).show();
 
     }
 }

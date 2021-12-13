@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SportCompetitionPlanner">
         <activity
-            android:name=".activities.TeamsListActivity"
+            android:name=".activities.TeamsList"
             android:exported="false" />
         <activity
-            android:name=".activities.CreateTeamActivity"
+            android:name=".activities.CreateTeam"
             android:exported="false" />
         <activity
-            android:name=".activities.BaseActivity"
+            android:name=".activities.Base"
             android:exported="false" />
         <activity
-            android:name=".activities.PlayerDetailsActivity"
+            android:name=".activities.PlayerDetails"
             android:exported="false" />
         <activity
             android:name=".activities.PlayersListActivity"
@@ -28,13 +28,13 @@
             android:name=".activities.CreatePlayerActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ProfilePreviewActivity"
+            android:name=".activities.ProfilePreview"
             android:exported="true" />
         <activity
             android:name=".activities.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.Main"
             android:exported="true" />
         <activity
             android:name=".activities.LoginActivity"

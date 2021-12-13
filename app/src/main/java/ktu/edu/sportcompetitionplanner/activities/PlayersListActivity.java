@@ -282,11 +282,11 @@ public class PlayersListActivity extends AppCompatActivity {
     }
 
     private void showProfile(){
-        startActivity(new Intent(PlayersListActivity.this, ProfilePreviewActivity.class));
+        startActivity(new Intent(PlayersListActivity.this, ProfilePreview.class));
     }
 
     private void Main(){
-        startActivity(new Intent(PlayersListActivity.this, MainActivity.class));
+        startActivity(new Intent(PlayersListActivity.this, Main.class));
 
     }
 

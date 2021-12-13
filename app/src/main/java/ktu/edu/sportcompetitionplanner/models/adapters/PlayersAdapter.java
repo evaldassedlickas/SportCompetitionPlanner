@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Context;
@@ -17,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 import ktu.edu.sportcompetitionplanner.R;
-import ktu.edu.sportcompetitionplanner.activities.PlayerDetailsActivity;
+import ktu.edu.sportcompetitionplanner.activities.PlayerDetails;
 import ktu.edu.sportcompetitionplanner.models.Player;
 
 
@@ -85,7 +84,7 @@ public class PlayersAdapter extends RecyclerView.Adapter<PlayersAdapter.ViewHold
                 public void onClick(View itemView) {
                     Player player = playersList.get(getAdapterPosition());
                    // int position = ViewHolder.super.getAdapterPosition();
-                    Intent intent = new Intent(mContext, PlayerDetailsActivity.class);
+                    Intent intent = new Intent(mContext, PlayerDetails.class);
                     intent.putExtra("playerInfo", player);
                     mContext.startActivity(intent);
 

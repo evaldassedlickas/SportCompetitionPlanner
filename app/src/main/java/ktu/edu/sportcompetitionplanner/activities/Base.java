@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class BaseActivity extends AppCompatActivity {
+public class Base extends AppCompatActivity {
     private FirebaseAuth mAuth;
     protected String subtitle;
 
@@ -31,7 +31,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user == null){
-            startActivity(new Intent(BaseActivity.this, LoginActivity.class));
+            startActivity(new Intent(Base.this, LoginActivity.class));
         }
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle(subtitle);
@@ -66,7 +66,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     private void Main(){
-        startActivity(new Intent(BaseActivity.this, MainActivity.class));
+        startActivity(new Intent(Base.this, Main.class));
 
     }
 
@@ -74,12 +74,12 @@ public class BaseActivity extends AppCompatActivity {
     private void Signout(){
         mAuth.signOut();
         finish();
-        startActivity(new Intent(BaseActivity.this, LoginActivity.class));
+        startActivity(new Intent(Base.this, LoginActivity.class));
 
     }
 
     private void showProfile(){
-        startActivity(new Intent(BaseActivity.this, ProfilePreviewActivity.class));
+        startActivity(new Intent(Base.this, ProfilePreview.class));
     }
 
 
