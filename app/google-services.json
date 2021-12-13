@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1078859404432",
+    "firebase_url": "https://sport-competition-planner-default-rtdb.firebaseio.com",
+    "project_id": "sport-competition-planner",
+    "storage_bucket": "sport-competition-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078859404432:android:c811070767e10965a77415",
+        "android_client_info": {
+          "package_name": "ktu.edu.sportcompetitionplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078859404432-30hd689v1o90ha5ufm2eaoab4bifu8rm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvTVSDNCHQt8I_mLbonBfFRytRUFacLeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078859404432-30hd689v1o90ha5ufm2eaoab4bifu8rm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

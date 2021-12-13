@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sport Competition Planner</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="all_competitions">All competitions</string>
+    <string name="teams">Teams</string>
+    <string name="players">Players</string>
+    <string name="create_new_team">Create new team"</string>
+    <string name="no_records">No records found</string>
+</resources>
