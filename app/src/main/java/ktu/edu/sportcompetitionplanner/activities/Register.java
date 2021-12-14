@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import ktu.edu.sportcompetitionplanner.R;
 import ktu.edu.sportcompetitionplanner.models.User;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     EditText inputEmail, inputPassword;
     FirebaseAuth mauth;
     DatabaseReference usersRef;
@@ -89,11 +89,11 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-                            Intent intent = new Intent(context, LoginActivity.class);
+                            Intent intent = new Intent(context, Login.class);
                             context.startActivity(intent);
-                            Toast.makeText(RegisterActivity.this, "Registration completed", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Register.this, "Registration completed", Toast.LENGTH_LONG).show();
                         } else {
-                            Toast.makeText(RegisterActivity.this, "Registration failed", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Register.this, "Registration failed", Toast.LENGTH_LONG).show();
 
                         }
                     }

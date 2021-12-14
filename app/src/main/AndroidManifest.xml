@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SportCompetitionPlanner">
         <activity
-            android:name=".activities.TeamsList"
+            android:name=".activities.TeamPreview"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ListTeams"
             android:exported="false" />
         <activity
             android:name=".activities.CreateTeam"
@@ -19,25 +22,25 @@
             android:name=".activities.Base"
             android:exported="false" />
         <activity
-            android:name=".activities.PlayerDetails"
+            android:name=".activities.PlayerPreview"
             android:exported="false" />
         <activity
-            android:name=".activities.PlayersListActivity"
+            android:name=".activities.ListPlayers"
             android:exported="false" />
         <activity
-            android:name=".activities.CreatePlayerActivity"
+            android:name=".activities.CreatePlayer"
             android:exported="false" />
         <activity
             android:name=".activities.ProfilePreview"
             android:exported="true" />
         <activity
-            android:name=".activities.RegisterActivity"
+            android:name=".activities.Register"
             android:exported="true" />
         <activity
             android:name=".activities.Main"
             android:exported="true" />
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".activities.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

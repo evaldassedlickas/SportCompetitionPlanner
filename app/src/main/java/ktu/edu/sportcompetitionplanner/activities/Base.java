@@ -31,7 +31,7 @@ public class Base extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user == null){
-            startActivity(new Intent(Base.this, LoginActivity.class));
+            startActivity(new Intent(Base.this, Login.class));
         }
         ActionBar actionBar = getSupportActionBar();
         actionBar.setSubtitle(subtitle);
@@ -74,7 +74,7 @@ public class Base extends AppCompatActivity {
     private void Signout(){
         mAuth.signOut();
         finish();
-        startActivity(new Intent(Base.this, LoginActivity.class));
+        startActivity(new Intent(Base.this, Login.class));
 
     }
 

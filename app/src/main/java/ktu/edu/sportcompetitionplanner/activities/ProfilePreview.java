@@ -30,7 +30,7 @@ public class ProfilePreview extends Base {
         super.onStart();
         FirebaseUser user = mauth.getCurrentUser();
         if(user == null){
-            startActivity(new Intent(ProfilePreview.this, LoginActivity.class));
+            startActivity(new Intent(ProfilePreview.this, Login.class));
         }
     }
 

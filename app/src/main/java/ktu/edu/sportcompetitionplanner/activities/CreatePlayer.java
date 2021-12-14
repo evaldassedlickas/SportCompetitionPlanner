@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import ktu.edu.sportcompetitionplanner.R;
 import ktu.edu.sportcompetitionplanner.models.Player;
 
-public class CreatePlayerActivity extends AppCompatActivity {
+public class CreatePlayer extends AppCompatActivity {
     FirebaseAuth mauth;
     DatabaseReference db;
 
@@ -77,8 +77,8 @@ public class CreatePlayerActivity extends AppCompatActivity {
         db.child(playerID)
                 .setValue(player);
 
-        startActivity(new Intent(CreatePlayerActivity.this, PlayersListActivity.class));
-        Toast.makeText(CreatePlayerActivity.this, "Player created sucussfully", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(CreatePlayer.this, ListPlayers.class));
+        Toast.makeText(CreatePlayer.this, "Player created sucussfully", Toast.LENGTH_LONG).show();
 
     }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TeamPreview">
+
+    <TextView
+        android:id="@+id/tvNameTeamPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tvCountryTeamPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCountryTeamPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="27dp"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tvDescriptionTeamPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTeamPreview" />
+
+    <TextView
+        android:id="@+id/tvDescriptionTeamPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="134dp"
+        android:textColor="@color/white"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryTeamPreview" />
+    <!-- app:layout_constraintBottom_toTopOf="@+id/rvTeamPlayersTeamPreview"-->
+
+   <!-- <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTeamPlayersTeamPreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionTeamPreview" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

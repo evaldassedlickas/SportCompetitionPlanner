@@ -28,7 +28,7 @@ public class Main extends Base {
     View.OnClickListener bntPlayersClick = new View.OnClickListener(){
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(context, PlayersListActivity.class);
+            Intent intent = new Intent(context, ListPlayers.class);
             context.startActivity(intent);
         }
     };
@@ -36,7 +36,7 @@ public class Main extends Base {
     View.OnClickListener btnTeamsClick = new View.OnClickListener(){
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(context, TeamsList.class);
+            Intent intent = new Intent(context, ListTeams.class);
             context.startActivity(intent);
         }
     };

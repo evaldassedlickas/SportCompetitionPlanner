@@ -35,7 +35,12 @@
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_create_player.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_login.xml" value="0.2695035460992908" />
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_player_details.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_players_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_profile_preview.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_register.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_team_preview.xml" value="0.30842391304347827" />
+        <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/activity_teams_list.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/player_item.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/player_list_item.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/evaldas.sedlickas/Desktop/apps_development/SportCompetitionPlanner/app/src/main/res/layout/team_list_item.xml" value="0.5541666666666667" />

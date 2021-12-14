@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class PlayerDetails extends Base {
+public class PlayerPreview extends Base {
 
     private TextView tvFirstname, tvLastname, tvPosition;
     private ImageView ivPhoto;

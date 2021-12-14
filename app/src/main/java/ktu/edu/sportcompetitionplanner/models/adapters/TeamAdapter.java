@@ -1,5 +1,6 @@
 package ktu.edu.sportcompetitionplanner.models.adapters;
 
+        import android.content.Intent;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
@@ -16,6 +17,7 @@ package ktu.edu.sportcompetitionplanner.models.adapters;
         import java.util.ArrayList;
 
         import ktu.edu.sportcompetitionplanner.R;
+        import ktu.edu.sportcompetitionplanner.activities.TeamPreview;
         import ktu.edu.sportcompetitionplanner.models.Team;
 
 
@@ -77,16 +79,15 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
             description = itemView.findViewById(R.id.description);
             btnRemove = itemView.findViewById(R.id.teamRemove);
 
-  /*          itemView.setOnClickListener(new View.OnClickListener(){
+            itemView.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View itemView) {
                     Team team = list.get(getAdapterPosition());
-                    Intent intent = new Intent(mContext, PlayerDetailsActivity.class);
-                    intent.putExtra("playerInfo", player);
+                    Intent intent = new Intent(mContext, TeamPreview.class);
+                    intent.putExtra("teamInfo", team);
                     mContext.startActivity(intent);
-
                 }
-            });*/
+            });
 
 
 

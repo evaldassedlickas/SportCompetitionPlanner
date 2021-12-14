@@ -35,7 +35,7 @@ import ktu.edu.sportcompetitionplanner.R;
 import ktu.edu.sportcompetitionplanner.models.Player;
 import ktu.edu.sportcompetitionplanner.models.adapters.PlayersAdapter;
 
-public class PlayersListActivity extends AppCompatActivity {
+public class ListPlayers extends AppCompatActivity {
     TextView noPlayerRecordsMessage;
     private RecyclerView recyclerView;
     private DatabaseReference playersRef;
@@ -86,8 +86,8 @@ public class PlayersListActivity extends AppCompatActivity {
         createBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(PlayersListActivity.this, "Add player", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(PlayersListActivity.this, CreatePlayerActivity.class));
+                Toast.makeText(ListPlayers.this, "Add player", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ListPlayers.this, CreatePlayer.class));
             }
         });
 
@@ -237,7 +237,7 @@ public class PlayersListActivity extends AppCompatActivity {
                 filtered.add(object);
             }
         }
-        PlayersAdapter filteredAdapter =new PlayersAdapter(PlayersListActivity.this, filtered);
+        PlayersAdapter filteredAdapter =new PlayersAdapter(ListPlayers.this, filtered);
         recyclerView.setAdapter(filteredAdapter);
     }
 
@@ -270,23 +270,23 @@ public class PlayersListActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user == null){
-            startActivity(new Intent(PlayersListActivity.this, LoginActivity.class));
+            startActivity(new Intent(ListPlayers.this, Login.class));
         }
     }
 
     private void Signout(){
         mAuth.signOut();
         finish();
-        startActivity(new Intent(PlayersListActivity.this, LoginActivity.class));
+        startActivity(new Intent(ListPlayers.this, Login.class));
 
     }
 
     private void showProfile(){
-        startActivity(new Intent(PlayersListActivity.this, ProfilePreview.class));
+        startActivity(new Intent(ListPlayers.this, ProfilePreview.class));
     }
 
     private void Main(){
-        startActivity(new Intent(PlayersListActivity.this, Main.class));
+        startActivity(new Intent(ListPlayers.this, Main.class));
 
     }
 

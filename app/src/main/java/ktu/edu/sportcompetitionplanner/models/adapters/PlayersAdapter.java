@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 import ktu.edu.sportcompetitionplanner.R;
-import ktu.edu.sportcompetitionplanner.activities.PlayerDetails;
+import ktu.edu.sportcompetitionplanner.activities.PlayerPreview;
 import ktu.edu.sportcompetitionplanner.models.Player;
 
 
@@ -84,7 +84,7 @@ public class PlayersAdapter extends RecyclerView.Adapter<PlayersAdapter.ViewHold
                 public void onClick(View itemView) {
                     Player player = playersList.get(getAdapterPosition());
                    // int position = ViewHolder.super.getAdapterPosition();
-                    Intent intent = new Intent(mContext, PlayerDetails.class);
+                    Intent intent = new Intent(mContext, PlayerPreview.class);
                     intent.putExtra("playerInfo", player);
                     mContext.startActivity(intent);
 

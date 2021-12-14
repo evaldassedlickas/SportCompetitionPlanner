@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import ktu.edu.sportcompetitionplanner.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
     private EditText emailInput, passwordInput;
     private Button loginBtn, registerBtn;
     private Context context = this;
@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
     View.OnClickListener registerClick = new View.OnClickListener(){
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            startActivity(new Intent(Login.this, Register.class));
         }
     };
 
@@ -101,7 +101,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user != null){
-            startActivity(new Intent(LoginActivity.this, Main.class));
+            startActivity(new Intent(Login.this, Main.class));
         }
     }
 }

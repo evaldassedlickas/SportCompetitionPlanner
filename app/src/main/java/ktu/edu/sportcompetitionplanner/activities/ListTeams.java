@@ -24,7 +24,7 @@ import ktu.edu.sportcompetitionplanner.models.Team;
 import ktu.edu.sportcompetitionplanner.models.adapters.TeamAdapter;
 
 
-public class TeamsList extends Base {
+public class ListTeams extends Base {
     TextView noTeamRecordsMessage;
 
     private FloatingActionButton createBtn;
@@ -57,8 +57,8 @@ public class TeamsList extends Base {
         createBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(TeamsList.this, "Add team", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(TeamsList.this, CreateTeam.class));
+                Toast.makeText(ListTeams.this, "Add team", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ListTeams.this, CreateTeam.class));
             }
         });
 

@@ -69,7 +69,7 @@ public class CreateTeam extends Base {
         db.child(teamID)
                 .setValue(team);
 
-        startActivity(new Intent(CreateTeam.this, TeamsList.class));
+        startActivity(new Intent(CreateTeam.this, ListTeams.class));
         Toast.makeText(CreateTeam.this, "Team created sucussfully", Toast.LENGTH_LONG).show();
 
     }
