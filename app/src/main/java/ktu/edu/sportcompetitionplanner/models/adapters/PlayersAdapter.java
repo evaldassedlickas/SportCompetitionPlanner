@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Context;
@@ -69,7 +70,8 @@ public class PlayersAdapter extends RecyclerView.Adapter<PlayersAdapter.ViewHold
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView imageView, playerRemove;
+        ImageView imageView;
+        Button playerRemove;
         TextView playerFullname, position;
 
         public ViewHolder(@NonNull View itemView) {

@@ -44,13 +44,15 @@
                 android:layout_margin="10dp"
                 android:textSize="16sp" />
 
-            <ImageView
+            <Button
                 android:id="@+id/playerRemove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/position"
                 android:layout_marginTop="21dp"
-                app:srcCompat="@android:drawable/ic_delete" />
+                android:drawableLeft="@android:drawable/ic_delete"
+                android:textColor="@color/white"
+                android:text="Delete" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
