@@ -168,40 +168,6 @@ public class ListPlayers extends AppCompatActivity {
     }
 
 
-    private void GetData2(){
-
-        playersRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Clear();
-                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                    //Player player = new Player();
-                    //  player.setFirstname(snapshot.child("firstname").getValue().toString());
-                    //playersList.add(player);
-                    Player player =  new Player();
-
-                    // player.setFirstname(snapshot.child("firstname").getValue().toString());
-                    //player.setFirstname(snapshot.child("lastname").getValue().toString());
-                    // player.setPhotoUrl(snapshot.child("photoUrl").getValue().toString());
-
-                    playersList.add(player);
-                }
-
-                playersAdapter.notifyDataSetChanged();
-
-                //  playersAdapter = new PlayersAdapter(getApplicationContext(), playersList);
-                // recyclerView.setAdapter(playersAdapter);
-                // playersAdapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Toast.makeText(PlayersListActivity.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -219,7 +185,6 @@ public class ListPlayers extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                //notesAdapter.getFilter().filter(newText);
                 search(newText);
 
                 return true;

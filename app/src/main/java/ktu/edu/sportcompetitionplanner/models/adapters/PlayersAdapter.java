@@ -83,7 +83,6 @@ public class PlayersAdapter extends RecyclerView.Adapter<PlayersAdapter.ViewHold
                 @Override
                 public void onClick(View itemView) {
                     Player player = playersList.get(getAdapterPosition());
-                   // int position = ViewHolder.super.getAdapterPosition();
                     Intent intent = new Intent(mContext, PlayerPreview.class);
                     intent.putExtra("playerInfo", player);
                     mContext.startActivity(intent);
